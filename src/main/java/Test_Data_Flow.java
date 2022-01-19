@@ -69,5 +69,6 @@ public class Test_Data_Flow {
                         .withCreateDisposition(BigQueryIO.Write.CreateDisposition.CREATE_IF_NEEDED)
                         .withWriteDisposition(BigQueryIO.Write.WriteDisposition.WRITE_TRUNCATE));
         pipeline.run().waitUntilFinish();
+        System.out.println("Done");
     }
 }
